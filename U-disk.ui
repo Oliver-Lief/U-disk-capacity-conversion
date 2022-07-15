@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1033</width>
+    <height>222</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>U-disk-convert</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit_GBinput">
+    <property name="geometry">
+     <rect>
+      <x>51</x>
+      <y>21</y>
+      <width>232</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Times New Roman&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_GB">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>40</y>
+      <width>37</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>GB</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_TBinput">
+    <property name="geometry">
+     <rect>
+      <x>51</x>
+      <y>84</y>
+      <width>232</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Times New Roman&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_TB">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>100</y>
+      <width>34</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>TB</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>334</x>
+      <y>60</y>
+      <width>93</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>查询</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_GBinput_2">
+    <property name="geometry">
+     <rect>
+      <x>434</x>
+      <y>21</y>
+      <width>521</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Times New Roman&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_GB_2">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>30</y>
+      <width>37</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>GB</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_TBinput_2">
+    <property name="geometry">
+     <rect>
+      <x>434</x>
+      <y>84</y>
+      <width>521</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Times New Roman&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_TB_2">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>100</y>
+      <width>34</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>TB</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1033</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>convert()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>371</x>
+     <y>104</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>369</x>
+     <y>177</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>convert()</slot>
+ </slots>
+</ui>
