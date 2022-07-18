@@ -11,6 +11,17 @@ win下：
 
 然后运行`U_disk.py`即可
 
+# v1
 样例：
 
 ![example](example.png)
+# v2
+1. 调整布局
+
+2. 更改逻辑结构，实现界面与功能分离
+
+- ....ui为样式文件
+- ..._UI.py为样式函数
+- ..._convert.py为功能函数
+- ..._main.py为主函数，执行该函数即可运行
+- ![example2](example2.png)
